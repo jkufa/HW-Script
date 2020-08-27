@@ -11,3 +11,6 @@ Copy `create.sh` into whatever folder you want to store your homework files with
 Type `chmod u+x create.sh`.
 
 Run the script with your homework number. Example: `./create.sh 1`
+
+### OR
+Just use this repo as a template! (Don't forget your TeX .gitignore)
