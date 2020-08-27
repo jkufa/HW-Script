@@ -11,15 +11,12 @@ if test -f "$CONFIG"; then
   do
     if [[ "$line" == *"CLASSNAME"* ]]; then
     class=${line#*: }
-      echo $class
     fi
     if [[ "$line" == *"PROFESSOR"* ]]; then
       professor=${line#*: }
-      echo $professor
     fi
     if [[ "$line" == *"AUTHOR"* ]]; then
       author=${line#*: }
-      echo $author
     fi
   done < $CONFIG
 else
@@ -30,9 +27,9 @@ else
   echo "AUTHOR: $authorName" >> $CONFIG
   echo "CLASSNAME: $className" >> $CONFIG
   echo "PROFESSOR: $profName" >> $CONFIG
-  $author = $authorName
-  $class = $className
-  $professor = $profName
+  author=$authorName
+  class=$className
+  professor=$profName
   echo "Config file created"
 fi
 
